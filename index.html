@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog-Clock</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #b25aff;
+            font-family: 'Caveat', cursive;
+            background-image: url(./codioful-formerly-gradienta-LeG68PrXA6Y-unsplash\ \(1\).jpg);
+            background-size: cover;
+        }
+
+        h1 {
+            color: #f300be;
+        }
+
+
+        #clock {
+            width: 300px;
+            height: 300px;
+            /* border: 2px solid red; */
+            border-radius: 100%;
+            margin: 60px auto;
+            position: relative;
+            background-image: url(./767099598edc493f08b6477ea7285481.jpg);
+            background-size: 100% 100%;
+        }
+
+        #pinsec {
+            height: 2px;
+            width: 38%;
+            background-color: rgb(255, 0, 0);
+            top: 50%;
+            left: 12%;
+            border-radius: 30px;
+            position: absolute;
+            transform-origin: 100%;
+
+        }
+
+        #minute {
+            height: 4px;
+            width: 30%;
+            background-color: black;
+            top: 50%;
+            border-radius: 30px;
+            background-color: rgb(196, 48, 255);
+            left: 20%;
+            position: absolute;
+            transform-origin: 100%;
+        }
+
+        #hours {
+            height: 4px;
+            width: 25%;
+            background-color: black;
+            top: 50%;
+            border-radius: 30px;
+            background-color: rgb(19, 185, 0);
+            left: 25%;
+            position: absolute;
+            transform-origin: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-full flex justify-center item-center pt-5">
+        <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-9xl">Analog-Clock</h1>
+    </div>
+    <div id="clock">
+        <div id="hours">H</div>
+        <div id="minute">M</div>
+        <div id="pinsec">S</div>
+    </div>
+
+
+   
+    <script src="index.js"></script>
+</body>
+
+</html>
